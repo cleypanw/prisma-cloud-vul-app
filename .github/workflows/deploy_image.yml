@@ -46,7 +46,7 @@ jobs:
         env:
           IMAGE_NAME: ${{ env.ECR_REPOSITORY }}:${{ github.sha }}
         with:
-          pcc_console_url: ${{ secrets.PCC_CONSOLE_URL }}
+          pcc_console_url: ${{ vars.PCC_CONSOLE_URL }}
           pcc_user: ${{ secrets.PCC_USER }}
           pcc_pass: ${{ secrets.PCC_PASS }}
           image_name: ${{ env.IMAGE_NAME }}
