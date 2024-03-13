@@ -70,7 +70,8 @@ spec:
     spec:
       serviceAccountName: secret-sa
       containers:
-      - image: chrisley75/vul-app:2.0.0
+#      - image: chrisley75/vul-app:2.0.0 # Same image hosted in docker hub
+      - image: 016246143337.dkr.ecr.eu-west-3.amazonaws.com/cleypanw/prisma-cloud-vul-app:2bc0429219ebd256b316401b6a3cd3a8ea7c3001
         name: vul-app
         ports:
         - containerPort: 5000
